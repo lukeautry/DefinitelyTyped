@@ -178,6 +178,11 @@ declare namespace Bull {
      * Number of times the job should repeat at max.
      */
     limit?: number;
+
+    /**
+     * Repeat every millis (cron setting cannot be used together with this setting.)
+     */
+    every?: number;
   }
 
   interface JobOptions {
